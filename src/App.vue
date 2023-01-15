@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="fondo mb-5">
+ <Navbar/>
+ <Tarea/>
+</div>
+ 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from '@/components/Navbar.vue';
+import Tarea from "./components/Tarea.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    Tarea 
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.fondo {
+  /* background-image: url("./assets/lineas.jpg"); */
+  background-size: cover;
+   /* background-size: contain; 
+  background-position: center center;
+  background-repeat: no-repeat; */
+
+  /* height: 100vh; */
+
 }
+
 </style>
